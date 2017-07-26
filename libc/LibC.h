@@ -33,3 +33,8 @@ bool pageChecksumTest(const char *szPage, uint32 uiBlockNo, uint32 uiPageSize, u
 bool pageChecksumBufferTest(
     const char *szPageBuffer, uint32 uiBufferSize, uint32 uiBlockNoStart, uint32 uiPageSize, uint32 uiIgnoreWalId,
     uint32 uiIgnoreWalOffset);
+
+/***********************************************************************************************************************************
+Config functions
+***********************************************************************************************************************************/
+char *optionGet(const char *szOption, bool bRequired);

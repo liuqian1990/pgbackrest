@@ -32,9 +32,13 @@ our %EXPORT_TAGS =
         pageChecksumTest
         pageChecksumBufferTest
     )],
+
+    'config' => [qw(
+        optionGet
+    )],
 );
 
-our @EXPORT_OK = (@{$EXPORT_TAGS{'debug'}}, @{$EXPORT_TAGS{'checksum'}});
+our @EXPORT_OK = (@{$EXPORT_TAGS{'debug'}}, @{$EXPORT_TAGS{'checksum'}}, @{$EXPORT_TAGS{'config'}});
 
 # Nothing is exported by default
 our @EXPORT = qw();

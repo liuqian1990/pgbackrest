@@ -39,3 +39,8 @@ pageChecksumBufferTest(szPageBuffer, uiBufferSize, uiBlockNoStart, uiPageSize, u
     U32 uiPageSize
     U32 uiIgnoreWalId
     U32 uiIgnoreWalOffset
+
+const char *
+optionGet(szOption, bRequired = false)
+    const char *szOption
+    bool bRequired
